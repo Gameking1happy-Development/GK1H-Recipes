@@ -1,10 +1,4 @@
 {
-  "neoforge:conditions": [
-    {
-      "type": "neoforge:mod_loaded",
-      "modid": "mr_better_goldrecycling"
-    }
-  ],
   "replace": false,
   "values": [
     {

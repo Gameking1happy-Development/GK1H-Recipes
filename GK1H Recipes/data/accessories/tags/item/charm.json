@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "replace": false,
+  "values": [
+    "netheriteextras:totem_of_neverdying"
+  ]
+}
