@@ -1,7 +1,7 @@
-package io.github.gameking1happy.examplemod.platform;
+package io.github.gameking1happy.gk1hrecipes.platform;
 
-import io.github.gameking1happy.examplemod.Constants;
-import io.github.gameking1happy.examplemod.platform.services.IPlatformHelper;
+import io.github.gameking1happy.gk1hrecipes.Constants;
+import io.github.gameking1happy.gk1hrecipes.platform.services.IPlatformHelper;
 
 import java.util.ServiceLoader;
 

@@ -1,4 +1,4 @@
-package io.github.gameking1happy.examplemod.platform.services;
+package io.github.gameking1happy.gk1hrecipes.platform.services;
 
 public interface IPlatformHelper {
 

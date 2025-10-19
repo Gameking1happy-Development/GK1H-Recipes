@@ -16,7 +16,7 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "${group}.ExampleMod"
+      "${group}.GK1HRecipes"
     ]
   },
   "mixins": [

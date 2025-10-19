@@ -1,8 +1,8 @@
-package io.github.gameking1happy.examplemod;
+package io.github.gameking1happy.gk1hrecipes;
 
 import net.fabricmc.api.ModInitializer;
 
-public class ExampleMod implements ModInitializer {
+public class GK1HRecipes implements ModInitializer {
     
     @Override
     public void onInitialize() {

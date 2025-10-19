@@ -1,6 +1,6 @@
-package io.github.gameking1happy.examplemod.platform;
+package io.github.gameking1happy.gk1hrecipes.platform;
 
-import io.github.gameking1happy.examplemod.platform.services.IPlatformHelper;
+import io.github.gameking1happy.gk1hrecipes.platform.services.IPlatformHelper;
 import net.fabricmc.loader.api.FabricLoader;
 
 public class FabricPlatformHelper implements IPlatformHelper {

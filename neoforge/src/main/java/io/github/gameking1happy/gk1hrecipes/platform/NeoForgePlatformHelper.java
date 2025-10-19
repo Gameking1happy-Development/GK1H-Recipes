@@ -1,6 +1,6 @@
-package io.github.gameking1happy.examplemod.platform;
+package io.github.gameking1happy.gk1hrecipes.platform;
 
-import io.github.gameking1happy.examplemod.platform.services.IPlatformHelper;
+import io.github.gameking1happy.gk1hrecipes.platform.services.IPlatformHelper;
 import net.neoforged.fml.ModList;
 import net.neoforged.fml.loading.FMLLoader;
 

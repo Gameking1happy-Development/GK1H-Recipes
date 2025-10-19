@@ -1,6 +1,6 @@
-package io.github.gameking1happy.examplemod.mixin;
+package io.github.gameking1happy.gk1hrecipes.mixin;
 
-import io.github.gameking1happy.examplemod.Constants;
+import io.github.gameking1happy.gk1hrecipes.Constants;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.screens.TitleScreen;
 import org.spongepowered.asm.mixin.Mixin;
