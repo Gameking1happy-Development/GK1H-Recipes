@@ -1,7 +1,5 @@
 package io.github.gameking1happy.gk1hrecipes.mixin;
 
-import io.github.gameking1happy.gk1hrecipes.GK1HRecipes;
-import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.screens.TitleScreen;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
@@ -13,7 +11,5 @@ public class MixinTitleScreen {
     
     @Inject(at = @At("HEAD"), method = "init()V")
     private void init(CallbackInfo info) {
-        // Logs the Minecraft version type.
-        GK1HRecipes.LOG.info("MC Version: {}", Minecraft.getInstance().getVersionType());
     }
 }

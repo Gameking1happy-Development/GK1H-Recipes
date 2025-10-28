@@ -28,7 +28,7 @@ jobs:
         with:
           # Only include this section if you wish to publish
           # your assets on Modrinth.
-          modrinth-id: MODRINTHID
+          modrinth-id: psRI0DzZ
           modrinth-token: ${{ secrets.GK1H_MODRINTH_API_KEY }}
           files: |
             fabric/build/libs/!(*-@(dev|shadow|sources|javadoc).jar)
@@ -38,7 +38,7 @@ jobs:
         with:
           # Only include this section if you wish to publish
           # your assets on Modrinth.
-          modrinth-id: MODRINTHID
+          modrinth-id: psRI0DzZ
           modrinth-token: ${{ secrets.GK1H_MODRINTH_API_KEY }}
           files: |
             neoforge/build/libs/!(*-@(dev|shadow|sources|javadoc).jar)
