@@ -10,7 +10,7 @@ import static io.github.gameking1happy.gk1hrecipes.Main.MOD_ID;
 public class MainFabric implements ModInitializer {
     public void onInitialize() {
         // Register the configs.
-        NeoForgeConfigRegistry.INSTANCE.register(MOD_ID, ModConfig.Type.SERVER, ServerConfig.SPEC, MOD_ID + "-server.toml");
+        NeoForgeConfigRegistry.INSTANCE.register(MOD_ID, ModConfig.Type.SERVER, ServerConfig.SPEC);
         // Initialize the mod.
         Main.init();
     }

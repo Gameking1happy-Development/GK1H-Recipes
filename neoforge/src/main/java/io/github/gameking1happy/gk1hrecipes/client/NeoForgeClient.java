@@ -10,7 +10,7 @@ import static io.github.gameking1happy.gk1hrecipes.Main.MOD_ID;
 
 @Mod(value = MOD_ID, dist = Dist.CLIENT)
 public class NeoForgeClient {
-    public static void initclient(ModContainer modContainer) {
+    public NeoForgeClient(ModContainer modContainer) {
         modContainer.registerExtensionPoint(IConfigScreenFactory.class, ConfigurationScreen::new);
         Client.initclient();
     }

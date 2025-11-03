@@ -7,7 +7,7 @@ import static io.github.gameking1happy.gk1hrecipes.Main.MOD_ID;
 
 @Mod(value = MOD_ID, dist = Dist.DEDICATED_SERVER)
 public class NeoForgeServer {
-    public static void initserver() {
+    public NeoForgeServer() {
         Server.initserver();
     }
 }
