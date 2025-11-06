@@ -6,10 +6,8 @@ import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
-import net.neoforged.neoforge.common.data.BlockTagsProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.data.event.GatherDataEvent;
-
 import java.util.concurrent.CompletableFuture;
 
 import static io.github.gameking1happy.gk1hrecipes.Main.MOD_ID;
@@ -24,7 +22,6 @@ public class GatherDataEventSubscribe {
         PackOutput output = generator.getPackOutput();
         ExistingFileHelper existingFileHelper = event.getExistingFileHelper();
         CompletableFuture<HolderLookup.Provider> lookupProvider = event.getLookupProvider();
-        BlockTagsProvider blockTagsProvider = new MyBlockTagsProvider(output, lookupProvider, existingFileHelper);
         // Register the provider.
         generator.addProvider(
                 // A boolean that determines whether the data should actually be generated.
@@ -39,14 +36,6 @@ public class GatherDataEventSubscribe {
         generator.addProvider(
                 event.includeClient(),
                 new MyLanguageProvider(output)
-        );
-        event.getGenerator().addProvider(
-                event.includeServer(),
-                blockTagsProvider
-        );
-        event.getGenerator().addProvider(
-                event.includeServer(),
-                new MyItemTagsProvider(output, lookupProvider, blockTagsProvider.contentsGetter(), existingFileHelper)
         );
     }
 }
