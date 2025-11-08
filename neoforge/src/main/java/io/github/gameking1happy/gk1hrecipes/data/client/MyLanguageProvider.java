@@ -19,6 +19,11 @@ public class MyLanguageProvider extends LanguageProvider {
     }
     @Override
     protected void addTranslations() {
-        // Translations.
+        // Adds a translation with the given key and the given value.
+        // add("PLACEHOLDER", "PLACEHOLDER");
+        // add("PLACEHOLDER", "PLACEHOLDER");
+        add("gk1hrecipes.configuration.section.gk1hrecipes.server.toml", "Server Settings");
+        add("gk1hrecipes.configuration.section.gk1hrecipes.server.toml.title", "GK1H Recipes Server Configuration");
+        add("gk1hrecipes.configuration.title", "GK1H Recipes Configuration");
     }
 }

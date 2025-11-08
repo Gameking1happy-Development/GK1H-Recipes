@@ -1,5 +1,4 @@
 //file:noinspection GroovyAssignabilityCheck
-//file:noinspection GroovyImplicitNullArgumentCall
 plugins {
     id 'multiloader-loader'
     id 'net.neoforged.moddev'
