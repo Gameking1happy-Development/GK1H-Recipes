@@ -5,7 +5,6 @@ import net.neoforged.neoforge.common.data.LanguageProvider;
 
 import static io.github.gameking1happy.gk1hrecipes.Main.MOD_ID;
 
-@SuppressWarnings("CommentedOutCode")
 public class MyLanguageProvider extends LanguageProvider {
     public MyLanguageProvider(PackOutput output) {
         super(
@@ -20,7 +19,6 @@ public class MyLanguageProvider extends LanguageProvider {
     @Override
     protected void addTranslations() {
         // Adds a translation with the given key and the given value.
-        // add("PLACEHOLDER", "PLACEHOLDER");
         // add("PLACEHOLDER", "PLACEHOLDER");
         add("gk1hrecipes.configuration.section.gk1hrecipes.server.toml", "Server Settings");
         add("gk1hrecipes.configuration.section.gk1hrecipes.server.toml.title", "GK1H Recipes Server Configuration");
