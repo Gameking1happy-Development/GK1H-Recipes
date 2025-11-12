@@ -19,8 +19,9 @@ public class GatherDataEventSubscribe {
         // See below for more details on each of these.
         DataGenerator generator = event.getGenerator();
         PackOutput output = generator.getPackOutput();
-        PackOutput test1Output = generator.getPackOutput("test1");
-        PackOutput test2Output = generator.getPackOutput("test2");
+        PackOutput BundleOutput = generator.getPackOutput("bundle");
+        PackOutput BundleMBCompatOutput = generator.getPackOutput("bundlembcompat");
+        PackOutput ChainOutput = generator.getPackOutput("chain");
         CompletableFuture<HolderLookup.Provider> lookupProvider = event.getLookupProvider();
         // Register the provider.
         generator.addProvider(
@@ -35,17 +36,15 @@ public class GatherDataEventSubscribe {
                 // Since recipes are server data, we only run them in a server datagen.
                 event.includeServer(),
                 // Our provider.
-                new OneRecipeProvider(test1Output, lookupProvider)
+                new BundleRecipeProvider(BundleOutput, lookupProvider)
         );
         generator.addProvider(
-                // A boolean that determines whether the data should actually be generated.
-                // The event provides methods that determine this:
-                // event.includeClient(), event.includeServer(),
-                // event.includeDev() and event.includeReports().
-                // Since recipes are server data, we only run them in a server datagen.
                 event.includeServer(),
-                // Our provider.
-                new TwoRecipeProvider(test2Output, lookupProvider)
+                new BundleMBCompatRecipeProvider(BundleMBCompatOutput, lookupProvider)
+        );
+        generator.addProvider(
+                event.includeServer(),
+                new ChainRecipeProvider(ChainOutput, lookupProvider)
         );
     }
 }

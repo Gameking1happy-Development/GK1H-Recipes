@@ -6,7 +6,7 @@ import net.fabricmc.api.ModInitializer;
 import net.neoforged.fml.config.ModConfig;
 
 import static io.github.gameking1happy.gk1hcore.platform.Services.ADDPACKS;
-import static io.github.gameking1happy.gk1hrecipes.Main.MOD_ID;
+import static io.github.gameking1happy.gk1hrecipes.Main.*;
 
 @SuppressWarnings("unused")
 public class MainFabric implements ModInitializer {

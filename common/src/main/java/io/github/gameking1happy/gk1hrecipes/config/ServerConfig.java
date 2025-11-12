@@ -8,6 +8,7 @@ import static net.neoforged.neoforge.common.ModConfigSpec.*;
 public class ServerConfig {
     // Server-side configuration options.
     public static final Builder BUILDER = new Builder();
-    public static final BooleanValue ExampleServer = makeConfig(BUILDER.worldRestart(), "ExampleServer", true, "An example server-side configuration option.", null);
+    public static final BooleanValue Bundle = makeConfig(BUILDER.worldRestart(), "bundle", true, "Enable bundle recipe.", null);
+    public static final BooleanValue Chain = makeConfig(BUILDER.worldRestart(), "chain", true, "Enable chain and chainmail armor recipes.", null);
     public static final ModConfigSpec SPEC = BUILDER.build();
 }

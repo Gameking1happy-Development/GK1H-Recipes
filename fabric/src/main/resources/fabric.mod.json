@@ -41,6 +41,9 @@
   "recommends": {
     "modmenu": ">=${modmenu_version}"
   },
+  "suggests": {
+    "metalbundles": ">=${metalbundles_version}"
+  },
   "custom": {
     "modmenu": {
       "links": {
@@ -54,7 +57,8 @@
         "minecraft@${minecraft_version}#(ignore)",
         "java@>=${java_version}#(ignore)",
         "forgeconfigapiport@>=${fcap_version}(required){modrinth:ohNO6lps}",
-        "gk1hcore@>=${gk1hcore_version}(required){modrinth:vjOWyxXu}"
+        "gk1hcore@>=${gk1hcore_version}(required){modrinth:vjOWyxXu}",
+        "metalbundles@>=${metalbundles_version}(optional){modrinth:6pY6oEMg}"
       ]
     }
   }

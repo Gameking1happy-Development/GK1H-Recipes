@@ -1,3 +1,4 @@
+//file:noinspection ForeignDelegate
 plugins {
     id 'multiloader-loader'
     id 'fabric-loom'
@@ -13,6 +14,9 @@ dependencies {
     modApi "fuzs.forgeconfigapiport:forgeconfigapiport-fabric:${fcap_version}"
     modApi "io.github.gameking1happy.gk1hcore:gk1hcore-fabric-1.21.1:${gk1hcore_version}"
     modImplementation("com.terraformersmc:modmenu:${project.modmenu_version}")
+    modImplementation "maven.modrinth:6pY6oEMg:v${metalbundles_version}-1.21.1-Fabric"
+    modImplementation "fuzs.puzzleslib:puzzleslib-fabric:${puzzleslib_version}"
+    modImplementation "fuzs.iteminteractions:iteminteractions-fabric:${iteminteractions_version}"
 }
 repositories {
     maven {
@@ -20,7 +24,6 @@ repositories {
         url = "https://maven.terraformersmc.com/"
     }
 }
-
 loom {
     def aw = project(':common').file("src/main/resources/${mod_id}.accesswidener")
     if (aw.exists()) {
