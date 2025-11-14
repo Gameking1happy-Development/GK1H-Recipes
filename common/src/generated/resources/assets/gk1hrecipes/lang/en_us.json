@@ -1,5 +1,7 @@
 {
-  "gk1hrecipes.configuration.section.gk1hrecipes.server.toml": "Server Settings",
-  "gk1hrecipes.configuration.section.gk1hrecipes.server.toml.title": "GK1H Recipes Server Configuration",
-  "gk1hrecipes.configuration.title": "GK1H Recipes Configuration"
+  "gk1hrecipes.server_config": "GK1H Recipes Configuration",
+  "gk1hrecipes.server_config.Bundle": "Bundle Recipe",
+  "gk1hrecipes.server_config.Bundle.desc": "Enable bundle recipe.",
+  "gk1hrecipes.server_config.Chain": "Chain Recipes",
+  "gk1hrecipes.server_config.Chain.desc": "Enable chain and chainmail armor recipes."
 }

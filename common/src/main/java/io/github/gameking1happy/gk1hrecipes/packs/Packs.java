@@ -1,15 +1,20 @@
 package io.github.gameking1happy.gk1hrecipes.packs;
 
-import static io.github.gameking1happy.gk1hcore.platform.Services.ADDPACKS;
-import static io.github.gameking1happy.gk1hcore.platform.Services.PLATFORM;
-import static io.github.gameking1happy.gk1hrecipes.Main.MOD_ID;
+import io.github.gameking1happy.gk1hcore.packs.addPacks;
+
+import static io.github.gameking1happy.gk1hcore.platform.Services.*;
+import static io.github.gameking1happy.gk1hrecipes.Main.*;
 
 public class Packs {
     public static void addPACKS(Object modContainerOrEvent) {
-        ADDPACKS.addCDP(modContainerOrEvent, MOD_ID, "bundle");
-        if (PLATFORM.isModLoaded("metalbundles")) {
-            ADDPACKS.addCDP(modContainerOrEvent, MOD_ID, "bundlembcompat");
+        if (Bundle) {
+            addPacks.addCDP(modContainerOrEvent, MOD_ID, "bundle");
+            if (PLATFORM.isModLoaded("metalbundles")) {
+                addPacks.addCDP(modContainerOrEvent, MOD_ID, "bundlembcompat");
             }
-        ADDPACKS.addCDP(modContainerOrEvent, MOD_ID, "chain");
+        }
+        if (Chain) {
+            addPacks.addCDP(modContainerOrEvent, MOD_ID, "chain");
+        }
     }
 }

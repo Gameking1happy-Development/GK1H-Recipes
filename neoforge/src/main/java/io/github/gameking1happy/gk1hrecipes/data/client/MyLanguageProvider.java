@@ -20,8 +20,10 @@ public class MyLanguageProvider extends LanguageProvider {
     protected void addTranslations() {
         // Adds a translation with the given key and the given value.
         // add("PLACEHOLDER", "PLACEHOLDER");
-        add("gk1hrecipes.configuration.section.gk1hrecipes.server.toml", "Server Settings");
-        add("gk1hrecipes.configuration.section.gk1hrecipes.server.toml.title", "GK1H Recipes Server Configuration");
-        add("gk1hrecipes.configuration.title", "GK1H Recipes Configuration");
+        add("gk1hrecipes.server_config", "GK1H Recipes Configuration");
+        add("gk1hrecipes.server_config.Bundle", "Bundle Recipe");
+        add("gk1hrecipes.server_config.Bundle.desc", "Enable bundle recipe.");
+        add("gk1hrecipes.server_config.Chain", "Chain Recipes");
+        add("gk1hrecipes.server_config.Chain.desc", "Enable chain and chainmail armor recipes.");
     }
 }

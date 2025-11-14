@@ -91,12 +91,12 @@ processResources {
             'java_version'                 : java_version,
             'mod_source_url'               : mod_source_url,
             'mod_issue_url'                : mod_issue_url,
-            'fcap_version'                 : fcap_version,
             'gk1hcore_version'             : gk1hcore_version,
             'modmenu_version'              : modmenu_version,
             'metalbundles_version'         : metalbundles_version,
             'puzzleslib_version'           : puzzleslib_version,
-            'iteminteractions_version'     : iteminteractions_version
+            'iteminteractions_version'     : iteminteractions_version,
+            'fzzy_config_version'          : fzzy_config_version
     ]
 
     filesMatching(['pack.mcmeta', 'fabric.mod.json', 'META-INF/mods.toml', 'META-INF/neoforge.mods.toml', '*.mixins.json']) {
