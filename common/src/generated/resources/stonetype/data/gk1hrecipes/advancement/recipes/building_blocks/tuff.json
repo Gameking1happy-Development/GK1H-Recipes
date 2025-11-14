@@ -1,0 +1,54 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_cobblestone": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:cobblestone"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_quartz": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:quartz"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_stone": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:stone"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "gk1hrecipes:tuff"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_stone",
+      "has_cobblestone",
+      "has_quartz"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "gk1hrecipes:tuff"
+    ]
+  }
+}

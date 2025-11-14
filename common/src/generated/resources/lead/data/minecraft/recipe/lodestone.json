@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "C": {
+      "item": "minecraft:chiseled_stone_bricks"
+    },
+    "I": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "pattern": [
+    "CCC",
+    "CIC",
+    "CCC"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:lodestone"
+  }
+}

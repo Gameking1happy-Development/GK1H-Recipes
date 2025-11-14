@@ -11,12 +11,14 @@ repositories {
     }
 }
 dependencies {
-    api "io.github.gameking1happy.gk1hcore:gk1hcore-neoforge-1.21.1:${gk1hcore_version}"
-    accessTransformers "io.github.gameking1happy.gk1hcore:gk1hcore-neoforge-1.21.1:${gk1hcore_version}"
-    implementation "maven.modrinth:6pY6oEMg:v${metalbundles_version}-1.21.1-NeoForge"
-    implementation "fuzs.puzzleslib:puzzleslib-neoforge:${puzzleslib_version}"
-    implementation "fuzs.iteminteractions:iteminteractions-neoforge:${iteminteractions_version}"
+    api("io.github.gameking1happy.gk1hcore:gk1hcore-neoforge-1.21.1:${gk1hcore_version}")
+    accessTransformers("io.github.gameking1happy.gk1hcore:gk1hcore-neoforge-1.21.1:${gk1hcore_version}")
+    implementation("maven.modrinth:6pY6oEMg:v${metalbundles_version}-1.21.1-NeoForge")
+    implementation("fuzs.puzzleslib:puzzleslib-neoforge:${puzzleslib_version}")
+    implementation("fuzs.iteminteractions:iteminteractions-neoforge:${iteminteractions_version}")
     implementation("me.fzzyhmstrs:fzzy_config:${fzzy_config_version}+neoforge")
+    implementation("maven.modrinth:CFX9ftUJ:neoforge-${advancednetherite_version}-mc1.21.1")
+    implementation("maven.modrinth:DUaLBLVL:v${spikyspikes_version}-1.21.1-NeoForge")
 }
 neoForge {
     version = neoforge_version

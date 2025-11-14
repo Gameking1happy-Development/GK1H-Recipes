@@ -42,7 +42,9 @@
     "modmenu": ">=${modmenu_version}"
   },
   "suggests": {
-    "metalbundles": ">=${metalbundles_version}"
+    "metalbundles": ">=${metalbundles_version}",
+    "advancednetherite": ">=${advancednetherite_version}",
+    "spikyspikes": ">=${spikyspikes_version}"
   },
   "custom": {
     "modmenu": {
@@ -58,7 +60,9 @@
         "java@>=${java_version}#(ignore)",
         "fzzy_config@>=${fzzy_config_version}(required){modrinth:hYykXjDp}",
         "gk1hcore@>=${gk1hcore_version}(required){modrinth:vjOWyxXu}",
-        "metalbundles@>=${metalbundles_version}(optional){modrinth:6pY6oEMg}"
+        "metalbundles@>=${metalbundles_version}(optional){modrinth:6pY6oEMg}",
+        "advancednetherite@>=${advancednetherite_version}(optional){modrinth:CFX9ftUJ}",
+        "spikyspikes@>=${spikyspikes_version}(optional){modrinth:DUaLBLVL}"
       ]
     }
   }

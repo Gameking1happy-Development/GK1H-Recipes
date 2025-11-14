@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "enchanted_golden_apple",
+  "key": {
+    "A": {
+      "item": "minecraft:golden_apple"
+    },
+    "B": {
+      "item": "minecraft:gold_block"
+    },
+    "I": {
+      "item": "minecraft:gold_ingot"
+    }
+  },
+  "pattern": [
+    "BBB",
+    "IAB",
+    "BBB"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:enchanted_golden_apple"
+  }
+}

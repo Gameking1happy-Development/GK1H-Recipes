@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "minecraft:heavy_core"
+    },
+    "O": {
+      "item": "minecraft:ominous_trial_key"
+    },
+    "T": {
+      "item": "minecraft:trial_key"
+    }
+  },
+  "pattern": [
+    "TOT",
+    "OCO",
+    "TOT"
+  ],
+  "result": {
+    "count": 2,
+    "id": "minecraft:heavy_core"
+  }
+}

@@ -96,7 +96,9 @@ processResources {
             'metalbundles_version'         : metalbundles_version,
             'puzzleslib_version'           : puzzleslib_version,
             'iteminteractions_version'     : iteminteractions_version,
-            'fzzy_config_version'          : fzzy_config_version
+            'fzzy_config_version'          : fzzy_config_version,
+            'advancednetherite_version'    : advancednetherite_version,
+            'spikyspikes_version'          : spikyspikes_version
     ]
 
     filesMatching(['pack.mcmeta', 'fabric.mod.json', 'META-INF/mods.toml', 'META-INF/neoforge.mods.toml', '*.mixins.json']) {

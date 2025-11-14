@@ -1,0 +1,54 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_diamond_bundle": {
+      "conditions": {
+        "items": [
+          {
+            "items": "metalbundles:diamond_bundle"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_netherite_ingot": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:netherite_ingot"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_netherite_upgrade_smithing_template": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:netherite_upgrade_smithing_template"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "metalbundles:netherite_bundle"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_diamond_bundle",
+      "has_netherite_ingot",
+      "has_netherite_upgrade_smithing_template"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "metalbundles:netherite_bundle"
+    ]
+  }
+}

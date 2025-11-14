@@ -22,6 +22,16 @@ public class GatherDataEventSubscribe {
         PackOutput BundleOutput = generator.getPackOutput("bundle");
         PackOutput BundleMBCompatOutput = generator.getPackOutput("bundlembcompat");
         PackOutput ChainOutput = generator.getPackOutput("chain");
+        PackOutput GappleOutput = generator.getPackOutput("gapple");
+        PackOutput HeavyCoreOutput = generator.getPackOutput("heavycore");
+        PackOutput HorseArmorSaddleOutput = generator.getPackOutput("horsearmorsaddle");
+        PackOutput LeadOutput = generator.getPackOutput("lead");
+        PackOutput LodestoneOutput = generator.getPackOutput("lodestone");
+        PackOutput NetheriteOutput = generator.getPackOutput("netherite");
+        PackOutput SmithingMBCompatOutput = generator.getPackOutput("smithingmbcompat");
+        PackOutput SmithingSSCompatOutput = generator.getPackOutput("smithingsscompat");
+        PackOutput StoneTypeOutput = generator.getPackOutput("stonetype");
+        PackOutput TotemOutput = generator.getPackOutput("totem");
         CompletableFuture<HolderLookup.Provider> lookupProvider = event.getLookupProvider();
         // Register the provider.
         generator.addProvider(
@@ -45,6 +55,46 @@ public class GatherDataEventSubscribe {
         generator.addProvider(
                 event.includeServer(),
                 new ChainRecipeProvider(ChainOutput, lookupProvider)
+        );
+        generator.addProvider(
+                event.includeServer(),
+                new GappleRecipeProvider(GappleOutput, lookupProvider)
+        );
+        generator.addProvider(
+                event.includeServer(),
+                new HeavyCoreRecipeProvider(HeavyCoreOutput, lookupProvider)
+        );
+        generator.addProvider(
+                event.includeServer(),
+                new HorseArmorSaddleRecipeProvider(HorseArmorSaddleOutput, lookupProvider)
+        );
+        generator.addProvider(
+                event.includeServer(),
+                new LeadRecipeProvider(LeadOutput, lookupProvider)
+        );
+        generator.addProvider(
+                event.includeServer(),
+                new LodestoneRecipeProvider(LodestoneOutput, lookupProvider)
+        );
+        generator.addProvider(
+                event.includeServer(),
+                new NetheriteRecipeProvider(NetheriteOutput, lookupProvider)
+        );
+        generator.addProvider(
+                event.includeServer(),
+                new SmithingMBCompatRecipeProvider(SmithingMBCompatOutput, lookupProvider)
+        );
+        generator.addProvider(
+                event.includeServer(),
+                new SmithingSSCompatRecipeProvider(SmithingSSCompatOutput, lookupProvider)
+        );
+        generator.addProvider(
+                event.includeServer(),
+                new StoneTypeRecipeProvider(StoneTypeOutput, lookupProvider)
+        );
+        generator.addProvider(
+                event.includeServer(),
+                new TotemRecipeProvider(TotemOutput, lookupProvider)
         );
     }
 }

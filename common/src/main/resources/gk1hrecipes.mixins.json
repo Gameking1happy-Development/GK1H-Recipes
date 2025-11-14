@@ -3,9 +3,7 @@
   "minVersion": "0.8",
   "package": "io.github.gameking1happy.gk1hrecipes.mixin",
   "compatibilityLevel": "JAVA_18",
-  "mixins": [
-    "addPacksMixin"
-  ],
+  "mixins": [],
   "client": [],
   "server": [],
   "injectors": {
