@@ -36,7 +36,7 @@ public class ServerConfig extends Config {
     @Comment("Enable heavy core duplication recipe.")
     public ValidatedBoolean HeavyCore = new ValidatedBoolean(true);
     /**
-     * Horse armor & saddle recipes configuration value.
+     * Horse armor &amp; saddle recipes configuration value.
      */
     @Comment("Enable horse armor & saddle recipes.")
     public ValidatedBoolean HorseArmorSaddle = new ValidatedBoolean(true);
@@ -61,7 +61,7 @@ public class ServerConfig extends Config {
     @Comment("Enable crafting to smithing recipes.")
     public ValidatedBoolean Smithing = new ValidatedBoolean(true);
     /**
-     * Netherrack & tuff recipes configuration value.
+     * Netherrack &amp; tuff recipes configuration value.
      */
     @Comment("Enable netherrack & tuff recipes.")
     public ValidatedBoolean StoneType = new ValidatedBoolean(true);

@@ -47,7 +47,7 @@ public class Main {
      */
     public static boolean HeavyCore = serverconfig.HeavyCore.get();
     /**
-     * Horse armor & saddle recipes configuration value.
+     * Horse armor &amp; saddle recipes configuration value.
      */
     public static boolean HorseArmorSaddle = serverconfig.HorseArmorSaddle.get();
     /**
@@ -67,7 +67,7 @@ public class Main {
      */
     public static boolean Smithing = serverconfig.Smithing.get();
     /**
-     * Netherrack & tuff recipes configuration value.
+     * Netherrack &amp; tuff recipes configuration value.
      */
     public static boolean StoneType = serverconfig.StoneType.get();
     /**
