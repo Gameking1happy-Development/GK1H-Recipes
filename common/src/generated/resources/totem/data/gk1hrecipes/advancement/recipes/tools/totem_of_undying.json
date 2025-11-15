@@ -33,7 +33,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "gk1hrecipes:gold_block"
+        "recipe": "gk1hrecipes:totem_of_undying"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -48,7 +48,7 @@
   ],
   "rewards": {
     "recipes": [
-      "gk1hrecipes:gold_block"
+      "gk1hrecipes:totem_of_undying"
     ]
   }
 }

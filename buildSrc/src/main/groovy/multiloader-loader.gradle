@@ -1,3 +1,4 @@
+//file:noinspection GrUnresolvedAccess
 plugins {
     id 'multiloader-common'
 }
@@ -9,7 +10,7 @@ configurations {
     commonResources {
         canBeResolved = true
     }
-    generatedResources{
+    generatedResources {
         canBeResolved = true
     }
 }

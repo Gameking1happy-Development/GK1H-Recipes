@@ -26,7 +26,7 @@ type: Bug
 <!--If applicable, add screenshots to help explain your problem.-->
 
 **Device, Launcher, and Version (please complete the following information):**
-<!--Windows/MacOS/Linux  
+<!--Windows/macOS/Linux  
 OS Version  
 Modrinth/CurseForge/ATLauncher/Prism Launcher/Minecraft Launcher/Other  
 Client/Server  

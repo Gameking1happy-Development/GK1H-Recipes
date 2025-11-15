@@ -41,15 +41,15 @@ side = "BOTH"
 [dependencies.${ mod_id }.mc-publish]
 ignore = false
 modrinth = "vjOWyxXu"
-[[dependencies.${mod_id}]]
+[[dependencies.${ mod_id }]]
 modId = "fzzy_config"
-type="required"
+type = "required"
 versionRange = "[${fzzy_config_version},)"
 ordering = "NONE"
 side = "BOTH"
-[dependencies.${mod_id}.mc-publish]
-ignore=false
-modrinth="hYykXjDp"
+[dependencies.${ mod_id }.mc-publish]
+ignore = false
+modrinth = "hYykXjDp"
 [[dependencies.${ mod_id }]]
 modId = "metalbundles"
 type = "optional"

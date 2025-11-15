@@ -5,8 +5,15 @@ import net.neoforged.fml.common.Mod;
 
 import static io.github.gameking1happy.gk1hrecipes.Main.MOD_ID;
 
+/**
+ * The NeoForge client-side method for the mod.
+ */
+@SuppressWarnings("unused")
 @Mod(value = MOD_ID, dist = Dist.CLIENT)
 public class NeoForgeClient {
+    /**
+     * Runs the NeoForge client-side mod initializer.
+     */
     public NeoForgeClient() {
         Client.initclient();
     }

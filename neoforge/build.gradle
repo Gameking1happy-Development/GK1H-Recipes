@@ -1,6 +1,7 @@
 //file:noinspection GroovyAssignabilityCheck
 //file:noinspection GroovyImplicitNullArgumentCall
 //file:noinspection ForeignDelegate
+//file:noinspection GrUnresolvedAccess
 plugins {
     id 'multiloader-loader'
     id 'net.neoforged.moddev'

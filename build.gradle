@@ -1,3 +1,4 @@
+//file:noinspection ForeignDelegate
 plugins {
     // see https://fabricmc.net/develop/ for new versions
     id 'fabric-loom' version '1.13-SNAPSHOT' apply false

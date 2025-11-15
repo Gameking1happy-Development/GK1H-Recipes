@@ -11,18 +11,26 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.concurrent.CompletableFuture;
 
-import static io.github.gameking1happy.gk1hrecipes.Main.MOD_ID;
 import static io.github.gameking1happy.gk1hcore.Main.fNAP;
+import static io.github.gameking1happy.gk1hrecipes.Main.MOD_ID;
 
+/**
+ * Enchanted Golden Apple datagen.
+ */
 public class GappleRecipeProvider extends RecipeProvider {
-    // Get the parameters from GatherDataEvent.
-    public GappleRecipeProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> lookupProvider) {
+    /**
+     * @param output Pack output.
+     * @param lookupProvider Lookup provider.
+     */
+    public GappleRecipeProvider(@NotNull PackOutput output, @NotNull CompletableFuture<HolderLookup.Provider> lookupProvider) {
         super(output, lookupProvider);
     }
+
     @Override
     public @NotNull String getName() {
         return super.getName() + "-Gapple";
     }
+
     @Override
     protected void buildRecipes(@NotNull RecipeOutput output) {
         ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, Items.ENCHANTED_GOLDEN_APPLE)
@@ -33,7 +41,7 @@ public class GappleRecipeProvider extends RecipeProvider {
                 .define('B', Items.GOLD_BLOCK)
                 .define('A', Items.APPLE)
                 .unlockedBy("has_gold_block", has(Items.GOLD_BLOCK))
-                .save(output,fNAP(MOD_ID,"enchanted_golden_apple"));
+                .save(output, fNAP(MOD_ID, "enchanted_golden_apple"));
         ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, Items.ENCHANTED_GOLDEN_APPLE)
                 .pattern("IBB")
                 .pattern("BAB")
@@ -45,7 +53,7 @@ public class GappleRecipeProvider extends RecipeProvider {
                 .unlockedBy("has_gold_block", has(Items.GOLD_BLOCK))
                 .unlockedBy("has_gold_ingot", has(Items.GOLD_INGOT))
                 .unlockedBy("has_golden_apple", has(Items.GOLDEN_APPLE))
-                .save(output,fNAP(MOD_ID,"golden_apple_enchant_1"));
+                .save(output, fNAP(MOD_ID, "golden_apple_enchant_1"));
         ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, Items.ENCHANTED_GOLDEN_APPLE)
                 .pattern("BIB")
                 .pattern("BAB")
@@ -57,7 +65,7 @@ public class GappleRecipeProvider extends RecipeProvider {
                 .unlockedBy("has_gold_block", has(Items.GOLD_BLOCK))
                 .unlockedBy("has_gold_ingot", has(Items.GOLD_INGOT))
                 .unlockedBy("has_golden_apple", has(Items.GOLDEN_APPLE))
-                .save(output,fNAP(MOD_ID,"golden_apple_enchant_2"));
+                .save(output, fNAP(MOD_ID, "golden_apple_enchant_2"));
         ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, Items.ENCHANTED_GOLDEN_APPLE)
                 .pattern("BBI")
                 .pattern("BAB")
@@ -69,7 +77,7 @@ public class GappleRecipeProvider extends RecipeProvider {
                 .unlockedBy("has_gold_block", has(Items.GOLD_BLOCK))
                 .unlockedBy("has_gold_ingot", has(Items.GOLD_INGOT))
                 .unlockedBy("has_golden_apple", has(Items.GOLDEN_APPLE))
-                .save(output,fNAP(MOD_ID,"golden_apple_enchant_3"));
+                .save(output, fNAP(MOD_ID, "golden_apple_enchant_3"));
         ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, Items.ENCHANTED_GOLDEN_APPLE)
                 .pattern("BBB")
                 .pattern("IAB")
@@ -81,7 +89,7 @@ public class GappleRecipeProvider extends RecipeProvider {
                 .unlockedBy("has_gold_block", has(Items.GOLD_BLOCK))
                 .unlockedBy("has_gold_ingot", has(Items.GOLD_INGOT))
                 .unlockedBy("has_golden_apple", has(Items.GOLDEN_APPLE))
-                .save(output,fNAP(MOD_ID,"golden_apple_enchant_4"));
+                .save(output, fNAP(MOD_ID, "golden_apple_enchant_4"));
         ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, Items.ENCHANTED_GOLDEN_APPLE)
                 .pattern("BBB")
                 .pattern("BAI")
@@ -93,7 +101,7 @@ public class GappleRecipeProvider extends RecipeProvider {
                 .unlockedBy("has_gold_block", has(Items.GOLD_BLOCK))
                 .unlockedBy("has_gold_ingot", has(Items.GOLD_INGOT))
                 .unlockedBy("has_golden_apple", has(Items.GOLDEN_APPLE))
-                .save(output,fNAP(MOD_ID,"golden_apple_enchant_5"));
+                .save(output, fNAP(MOD_ID, "golden_apple_enchant_5"));
         ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, Items.ENCHANTED_GOLDEN_APPLE)
                 .pattern("BBB")
                 .pattern("BAB")
@@ -105,7 +113,7 @@ public class GappleRecipeProvider extends RecipeProvider {
                 .unlockedBy("has_gold_block", has(Items.GOLD_BLOCK))
                 .unlockedBy("has_gold_ingot", has(Items.GOLD_INGOT))
                 .unlockedBy("has_golden_apple", has(Items.GOLDEN_APPLE))
-                .save(output,fNAP(MOD_ID,"golden_apple_enchant_6"));
+                .save(output, fNAP(MOD_ID, "golden_apple_enchant_6"));
         ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, Items.ENCHANTED_GOLDEN_APPLE)
                 .pattern("BBB")
                 .pattern("BAB")
@@ -117,7 +125,7 @@ public class GappleRecipeProvider extends RecipeProvider {
                 .unlockedBy("has_gold_block", has(Items.GOLD_BLOCK))
                 .unlockedBy("has_gold_ingot", has(Items.GOLD_INGOT))
                 .unlockedBy("has_golden_apple", has(Items.GOLDEN_APPLE))
-                .save(output,fNAP(MOD_ID,"golden_apple_enchant_7"));
+                .save(output, fNAP(MOD_ID, "golden_apple_enchant_7"));
         ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, Items.ENCHANTED_GOLDEN_APPLE)
                 .pattern("BBB")
                 .pattern("BAB")
@@ -129,6 +137,6 @@ public class GappleRecipeProvider extends RecipeProvider {
                 .unlockedBy("has_gold_block", has(Items.GOLD_BLOCK))
                 .unlockedBy("has_gold_ingot", has(Items.GOLD_INGOT))
                 .unlockedBy("has_golden_apple", has(Items.GOLDEN_APPLE))
-                .save(output,fNAP(MOD_ID,"golden_apple_enchant_8"));
+                .save(output, fNAP(MOD_ID, "golden_apple_enchant_8"));
     }
 }

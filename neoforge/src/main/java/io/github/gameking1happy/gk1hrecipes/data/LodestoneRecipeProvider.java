@@ -11,15 +11,23 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.concurrent.CompletableFuture;
 
+/**
+ * Lodestone datagen.
+ */
 public class LodestoneRecipeProvider extends RecipeProvider {
-    // Get the parameters from GatherDataEvent.
-    public LodestoneRecipeProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> lookupProvider) {
+    /**
+     * @param output Pack output.
+     * @param lookupProvider Lookup provider.
+     */
+    public LodestoneRecipeProvider(@NotNull PackOutput output, @NotNull CompletableFuture<HolderLookup.Provider> lookupProvider) {
         super(output, lookupProvider);
     }
+
     @Override
     public @NotNull String getName() {
         return super.getName() + "-Lead";
     }
+
     @Override
     protected void buildRecipes(@NotNull RecipeOutput output) {
         ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, Items.LEAD)

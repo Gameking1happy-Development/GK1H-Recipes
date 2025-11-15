@@ -11,18 +11,26 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.concurrent.CompletableFuture;
 
-import static io.github.gameking1happy.gk1hrecipes.Main.MOD_ID;
 import static io.github.gameking1happy.gk1hcore.Main.fNAP;
+import static io.github.gameking1happy.gk1hrecipes.Main.MOD_ID;
 
+/**
+ * Heavy Core datagen.
+ */
 public class HeavyCoreRecipeProvider extends RecipeProvider {
-    // Get the parameters from GatherDataEvent.
-    public HeavyCoreRecipeProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> lookupProvider) {
+    /**
+     * @param output Pack output.
+     * @param lookupProvider Lookup provider.
+     */
+    public HeavyCoreRecipeProvider(@NotNull PackOutput output, @NotNull CompletableFuture<HolderLookup.Provider> lookupProvider) {
         super(output, lookupProvider);
     }
+
     @Override
     public @NotNull String getName() {
         return super.getName() + "-HeavyCore";
     }
+
     @Override
     protected void buildRecipes(@NotNull RecipeOutput output) {
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Items.HEAVY_CORE, 2)

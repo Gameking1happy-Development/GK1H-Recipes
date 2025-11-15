@@ -12,15 +12,23 @@ import java.util.concurrent.CompletableFuture;
 import static io.github.gameking1happy.gk1hcore.Main.fNAP;
 import static io.github.gameking1happy.gk1hrecipes.Main.MOD_ID;
 
+/**
+ * Tuff &amp; Netherrack datagen.
+ */
 public class StoneTypeRecipeProvider extends RecipeProvider {
-    // Get the parameters from GatherDataEvent.
-    public StoneTypeRecipeProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> lookupProvider) {
+    /**
+     * @param output Pack output.
+     * @param lookupProvider Lookup provider.
+     */
+    public StoneTypeRecipeProvider(@NotNull PackOutput output, @NotNull CompletableFuture<HolderLookup.Provider> lookupProvider) {
         super(output, lookupProvider);
     }
+
     @Override
     public @NotNull String getName() {
         return super.getName() + "-StoneType";
     }
+
     @Override
     protected void buildRecipes(@NotNull RecipeOutput output) {
         ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, Items.TUFF, 2)
@@ -31,8 +39,8 @@ public class StoneTypeRecipeProvider extends RecipeProvider {
                 .unlockedBy("has_cobblestone", has(Items.COBBLESTONE))
                 .unlockedBy("has_quartz", has(Items.QUARTZ))
                 .save(output, fNAP(MOD_ID, "tuff"));
-        SimpleCookingRecipeBuilder.smelting(Ingredient.of(Items.BLACKSTONE),RecipeCategory.BUILDING_BLOCKS, Items.NETHERRACK, 0.1F, 200)
-                .unlockedBy("has_blackstone",has(Items.BLACKSTONE))
-                .save(output, fNAP(MOD_ID,"netherrack"));
+        SimpleCookingRecipeBuilder.smelting(Ingredient.of(Items.BLACKSTONE), RecipeCategory.BUILDING_BLOCKS, Items.NETHERRACK, 0.1F, 200)
+                .unlockedBy("has_blackstone", has(Items.BLACKSTONE))
+                .save(output, fNAP(MOD_ID, "netherrack"));
     }
 }

@@ -2,23 +2,23 @@ package io.github.gameking1happy.gk1hrecipes.data.client;
 
 import net.minecraft.data.PackOutput;
 import net.neoforged.neoforge.common.data.LanguageProvider;
+import org.jetbrains.annotations.NotNull;
 
 import static io.github.gameking1happy.gk1hrecipes.Main.MOD_ID;
 
+/**
+ * Language datagen.
+ */
 public class MyLanguageProvider extends LanguageProvider {
-    public MyLanguageProvider(PackOutput output) {
-        super(
-                // Provided by the GatherDataEvent.
-                output,
-                // Your mod id.
-                MOD_ID,
-                // The locale to use. You may use multiple language providers for different locales.
-                "en_us"
-        );
+    /**
+     * @param output Pack output.
+     */
+    public MyLanguageProvider(@NotNull PackOutput output) {
+        super(output, MOD_ID, "en_us");
     }
+
     @Override
     protected void addTranslations() {
-        // Adds a translation with the given key and the given value.
         add("gk1hrecipes.server_config", "GK1H Recipes Configuration");
         add("gk1hrecipes.server_config.Bundle", "Bundle Recipe");
         add("gk1hrecipes.server_config.Bundle.desc", "Enable bundle recipe.");

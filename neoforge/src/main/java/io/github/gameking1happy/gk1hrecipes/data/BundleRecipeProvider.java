@@ -11,15 +11,23 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.concurrent.CompletableFuture;
 
+/**
+ * Bundle datagen.
+ */
 public class BundleRecipeProvider extends RecipeProvider {
-    // Get the parameters from GatherDataEvent.
-    public BundleRecipeProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> lookupProvider) {
+    /**
+     * @param output Pack output.
+     * @param lookupProvider Lookup provider.
+     */
+    public BundleRecipeProvider(@NotNull PackOutput output, @NotNull CompletableFuture<HolderLookup.Provider> lookupProvider) {
         super(output, lookupProvider);
     }
+
     @Override
     public @NotNull String getName() {
         return super.getName() + "-Bundle";
     }
+
     @Override
     protected void buildRecipes(@NotNull RecipeOutput output) {
         ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, Items.BUNDLE)

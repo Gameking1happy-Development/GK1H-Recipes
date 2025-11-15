@@ -1,3 +1,4 @@
+//file:noinspection ForeignDelegate
 pluginManagement {
     repositories {
         gradlePluginPortal()

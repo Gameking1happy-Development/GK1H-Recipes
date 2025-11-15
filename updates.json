@@ -2,10 +2,11 @@
   "homepage": "https://github.com/Gameking1happy-Development/GK1H-Recipes",
   "1.21.1": {
     "1.0.0": "Developmental version.",
-    "21.1.1.0": "Changed versioning to [Minecraft Minor].[Minecraft Patch].[Major].[Minor]."
+    "21.1.1.0": "Changed versioning to [Minecraft Minor].[Minecraft Patch].[Major].[Minor].",
+    "21.1.1.1-SNAPSHOT": "Added documentation and cleaned up code."
   },
   "promos": {
-    "1.21.1-latest": "21.1.1.0",
+    "1.21.1-latest": "21.1.1.1-SNAPSHOT",
     "1.21.1-recommended": "21.1.1.0"
   }
 }

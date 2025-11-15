@@ -11,18 +11,26 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.concurrent.CompletableFuture;
 
-import static io.github.gameking1happy.gk1hrecipes.Main.MOD_ID;
 import static io.github.gameking1happy.gk1hcore.Main.fNAP;
+import static io.github.gameking1happy.gk1hrecipes.Main.MOD_ID;
 
+/**
+ * Chain datagen.
+ */
 public class ChainRecipeProvider extends RecipeProvider {
-    // Get the parameters from GatherDataEvent.
-    public ChainRecipeProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> lookupProvider) {
+    /**
+     * @param output Pack output.
+     * @param lookupProvider Lookup provider.
+     */
+    public ChainRecipeProvider(@NotNull PackOutput output, @NotNull CompletableFuture<HolderLookup.Provider> lookupProvider) {
         super(output, lookupProvider);
     }
+
     @Override
     public @NotNull String getName() {
         return super.getName() + "-Chain";
     }
+
     @Override
     protected void buildRecipes(@NotNull RecipeOutput output) {
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Items.CHAIN, 4)
@@ -39,26 +47,26 @@ public class ChainRecipeProvider extends RecipeProvider {
                 .pattern("X X")
                 .define('X', Items.CHAIN)
                 .unlockedBy("has_chain", has(Items.CHAIN))
-                .save(output,fNAP(MOD_ID,"chainmail_helmet"));
+                .save(output, fNAP(MOD_ID, "chainmail_helmet"));
         ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, Items.CHAINMAIL_CHESTPLATE)
                 .pattern("X X")
                 .pattern("XXX")
                 .pattern("XXX")
                 .define('X', Items.CHAIN)
                 .unlockedBy("has_chain", has(Items.CHAIN))
-                .save(output,fNAP(MOD_ID,"chainmail_chestplate"));
+                .save(output, fNAP(MOD_ID, "chainmail_chestplate"));
         ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, Items.CHAINMAIL_LEGGINGS)
                 .pattern("XXX")
                 .pattern("X X")
                 .pattern("X X")
                 .define('X', Items.CHAIN)
                 .unlockedBy("has_chain", has(Items.CHAIN))
-                .save(output,fNAP(MOD_ID,"chainmail_leggings"));
+                .save(output, fNAP(MOD_ID, "chainmail_leggings"));
         ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, Items.CHAINMAIL_BOOTS)
                 .pattern("X X")
                 .pattern("X X")
                 .define('X', Items.CHAIN)
                 .unlockedBy("has_chain", has(Items.CHAIN))
-                .save(output,fNAP(MOD_ID,"chainmail_boots"));
+                .save(output, fNAP(MOD_ID, "chainmail_boots"));
     }
 }

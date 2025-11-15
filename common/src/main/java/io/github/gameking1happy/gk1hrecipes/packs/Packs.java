@@ -1,13 +1,21 @@
 package io.github.gameking1happy.gk1hrecipes.packs;
 
 import io.github.gameking1happy.gk1hcore.packs.AddPacks;
+import org.jetbrains.annotations.NotNull;
 
 import static io.github.gameking1happy.gk1hcore.packs.AddPackPreset.addCDP;
-import static io.github.gameking1happy.gk1hcore.platform.Services.*;
+import static io.github.gameking1happy.gk1hcore.platform.Services.PLATFORM;
 import static io.github.gameking1happy.gk1hrecipes.Main.*;
 
+/**
+ * Class to add packs.
+ */
+@SuppressWarnings("unused")
 public class Packs implements AddPacks {
-    public void addPacks(Object modContainerOrEvent) {
+    /**
+     * @param modContainerOrEvent ModContainer for Fabric, AddPackFindersEvent for NeoForge.
+     */
+    public void addPacks(@NotNull Object modContainerOrEvent) {
         if (Bundle) {
             if (!PLATFORM.isModLoaded("metalbundles")) {
                 addCDP(modContainerOrEvent, getModID(), "bundle");
@@ -56,8 +64,11 @@ public class Packs implements AddPacks {
         }
     }
 
+    /**
+     * @return Returns the mod ID.
+     */
     @Override
-    public String getModID() {
+    public @NotNull String getModID() {
         return MOD_ID;
     }
 }
