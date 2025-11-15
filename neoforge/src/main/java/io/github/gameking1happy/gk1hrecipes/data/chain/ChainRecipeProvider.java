@@ -1,4 +1,4 @@
-package io.github.gameking1happy.gk1hrecipes.data;
+package io.github.gameking1happy.gk1hrecipes.data.chain;
 
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;

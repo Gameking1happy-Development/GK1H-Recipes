@@ -58,11 +58,11 @@
         "fabricloader@>=${fabric_loader_version}#(ignore)",
         "minecraft@${minecraft_version}#(ignore)",
         "java@>=${java_version}#(ignore)",
-        "fzzy_config@>=${fzzy_config_version}(required){modrinth:hYykXjDp}",
-        "gk1hcore@>=${gk1hcore_version}(required){modrinth:vjOWyxXu}",
-        "metalbundles@>=${metalbundles_version}(optional){modrinth:6pY6oEMg}",
-        "advancednetherite@>=${advancednetherite_version}(optional){modrinth:CFX9ftUJ}",
-        "spikyspikes@>=${spikyspikes_version}(optional){modrinth:DUaLBLVL}"
+        "fzzy_config@>=${fzzy_config_version}(required){modrinth:hYykXjDp}{curseforge:1005914}",
+        "gk1hcore@>=${gk1hcore_version}(required){modrinth:vjOWyxXu}{curseforge:1384685}",
+        "metalbundles@>=${metalbundles_version}(optional){modrinth:6pY6oEMg}{curseforge:891325}",
+        "advancednetherite@>=${advancednetherite_version}(optional){modrinth:CFX9ftUJ}{curseforge:547881}",
+        "spikyspikes@>=${spikyspikes_version}(optional){modrinth:DUaLBLVL}{curseforge:666944}"
       ]
     }
   }

@@ -1,6 +1,19 @@
 package io.github.gameking1happy.gk1hrecipes.data;
 
+import io.github.gameking1happy.gk1hrecipes.data.bundle.BundleRecipeProvider;
+import io.github.gameking1happy.gk1hrecipes.data.bundle.bundlembcompat.BundleMBCompatRecipeProvider;
+import io.github.gameking1happy.gk1hrecipes.data.chain.ChainRecipeProvider;
 import io.github.gameking1happy.gk1hrecipes.data.client.MyLanguageProvider;
+import io.github.gameking1happy.gk1hrecipes.data.gapple.GappleRecipeProvider;
+import io.github.gameking1happy.gk1hrecipes.data.heavycore.HeavyCoreRecipeProvider;
+import io.github.gameking1happy.gk1hrecipes.data.horsearmorsaddle.HorseArmorSaddleRecipeProvider;
+import io.github.gameking1happy.gk1hrecipes.data.lead.LeadRecipeProvider;
+import io.github.gameking1happy.gk1hrecipes.data.lodestone.LodestoneRecipeProvider;
+import io.github.gameking1happy.gk1hrecipes.data.netherite.NetheriteRecipeProvider;
+import io.github.gameking1happy.gk1hrecipes.data.smithing.SmithingMBCompatRecipeProvider;
+import io.github.gameking1happy.gk1hrecipes.data.smithing.SmithingSSCompatRecipeProvider;
+import io.github.gameking1happy.gk1hrecipes.data.stonetype.StoneTypeRecipeProvider;
+import io.github.gameking1happy.gk1hrecipes.data.totem.TotemRecipeProvider;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;

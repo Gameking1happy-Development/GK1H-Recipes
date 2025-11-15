@@ -1,4 +1,4 @@
-package io.github.gameking1happy.gk1hrecipes.data;
+package io.github.gameking1happy.gk1hrecipes.data.lodestone;
 
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
@@ -12,32 +12,30 @@ import org.jetbrains.annotations.NotNull;
 import java.util.concurrent.CompletableFuture;
 
 /**
- * Lead datagen.
+ * Lodestone datagen.
  */
-public class LeadRecipeProvider extends RecipeProvider {
+public class LodestoneRecipeProvider extends RecipeProvider {
     /**
      * @param output Pack output.
      * @param lookupProvider Lookup provider.
      */
-    public LeadRecipeProvider(@NotNull PackOutput output, @NotNull CompletableFuture<HolderLookup.Provider> lookupProvider) {
+    public LodestoneRecipeProvider(@NotNull PackOutput output, @NotNull CompletableFuture<HolderLookup.Provider> lookupProvider) {
         super(output, lookupProvider);
     }
 
     @Override
     public @NotNull String getName() {
-        return super.getName() + "-Lodestone";
+        return super.getName() + "-Lead";
     }
 
     @Override
     protected void buildRecipes(@NotNull RecipeOutput output) {
-        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, Items.LODESTONE)
-                .pattern("CCC")
-                .pattern("CIC")
-                .pattern("CCC")
-                .define('C', Items.CHISELED_STONE_BRICKS)
-                .define('I', Items.IRON_INGOT)
-                .unlockedBy("has_chiseled_stone_bricks", has(Items.CHISELED_STONE_BRICKS))
-                .unlockedBy("has_iron_ingot", has(Items.IRON_INGOT))
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, Items.LEAD)
+                .pattern("SS ")
+                .pattern("SS ")
+                .pattern("  S")
+                .define('S', Items.STRING)
+                .unlockedBy("has_string", has(Items.STRING))
                 .save(output);
     }
 }

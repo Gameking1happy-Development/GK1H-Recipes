@@ -19,7 +19,7 @@ public class Main {
      */
     public static final String MOD_ID = "gk1hrecipes";
     /**
-     * The mod ID.
+     * The mod name.
      */
     public static final String MOD_NAME = "GK1H Recipes";
     /**
