@@ -1,91 +1,60 @@
 Recipe mod for 1.21.1 made by GK1H.
 <h1>Features</h1>
-
 <details>
-<summary>Bundle</summary>
-Bundle recipe, if Metal Bundles is loaded instead disables bundle recipe and replaces the leather bundle recipe from Metal Bundles.
-
-![bundle.png](images/Bundle/bundle.png)
+<summary><strong>Bundle</strong></summary>
+Bundle recipe, if Metal Bundles is loaded instead disables bundle recipe and replaces the leather bundle recipe from Metal Bundles.<br>
+<img src="images/Bundle/bundle.png" alt="Bundle">
 </details>
 <details>
-<summary>Chain</summary>
-Better chain recipe and chainmail armor recipes.
-
-![chain.png](images/Chain/chain.png)
-![chainmail_helmet.png](images/Chain/chainmail_helmet.png)
-![chainmail_chestplate.png](images/Chain/chainmail_chestplate.png)
-![chainmail_leggings.png](images/Chain/chainmail_leggings.png)
-![chainmail_boots.png](images/Chain/chainmail_boots.png)
+<summary><strong>Chain</strong></summary>
+Better chain recipe and chainmail armor recipes.<br>
+<img src="images/Chain/chain.png" alt="Chain"><img src="images/Chain/chainmail_helmet.png" alt="Chainmail Helmet"><img src="images/Chain/chainmail_chestplate.png" alt="Chainmail Chestplate"><img src="images/Chain/chainmail_leggings.png" alt="Chainmail Leggings"><img src="images/Chain/chainmail_boots.png" alt="Chainmail Boots">
 </details>
 <details>
-<summary>Enchanted Golden Apple</summary>
-Enchanted golden apple recipes, including both using an apple and using a golden apple.
-
-![enchanted_golden_apple.png](images/Enchanted%20Golden%20Apple/enchanted_golden_apple.png)
-![golden_apple_enchant_1.png](images/Enchanted%20Golden%20Apple/golden_apple_enchant_1.png)
-![golden_apple_enchant_2.png](images/Enchanted%20Golden%20Apple/golden_apple_enchant_2.png)
-![golden_apple_enchant_3.png](images/Enchanted%20Golden%20Apple/golden_apple_enchant_3.png)
-![golden_apple_enchant_4.png](images/Enchanted%20Golden%20Apple/golden_apple_enchant_4.png)
-![golden_apple_enchant_5.png](images/Enchanted%20Golden%20Apple/golden_apple_enchant_5.png)
-![golden_apple_enchant_6.png](images/Enchanted%20Golden%20Apple/golden_apple_enchant_6.png)
-![golden_apple_enchant_7.png](images/Enchanted%20Golden%20Apple/golden_apple_enchant_7.png)
-![golden_apple_enchant_8.png](images/Enchanted%20Golden%20Apple/golden_apple_enchant_8.png)
+<summary><strong>Enchanted Golden Apple</strong></summary>
+Enchanted golden apple recipes, including both using an apple and using a golden apple.<br>
+<img src="images/Enchanted%20Golden%20Apple/enchanted_golden_apple.png" alt="Enchanted Golden Apple"><img src="images/Enchanted%20Golden%20Apple/golden_apple_enchant_1.png" alt="Golden Apple Enchant 1"><img src="images/Enchanted%20Golden%20Apple/golden_apple_enchant_2.png" alt="Golden Apple Enchant 2"><img src="images/Enchanted%20Golden%20Apple/golden_apple_enchant_3.png" alt="Golden Apple Enchant 3"><img src="images/Enchanted%20Golden%20Apple/golden_apple_enchant_4.png" alt="Golden Apple Enchant 4"><img src="images/Enchanted%20Golden%20Apple/golden_apple_enchant_5.png" alt="Golden Apple Enchant 5"><img src="images/Enchanted%20Golden%20Apple/golden_apple_enchant_6.png" alt="Golden Apple Enchant 6"><img src="images/Enchanted%20Golden%20Apple/golden_apple_enchant_7.png" alt="Golden Apple Enchant 7"><img src="images/Enchanted%20Golden%20Apple/golden_apple_enchant_8.png" alt="Golden Apple Enchant 8">
 </details>
 <details>
-<summary>Heavy Core</summary>
-Heavy core duplication recipe.
-
-![heavy_core.png](images/Heavy%20Core/heavy_core.png)
+<summary><strong>Heavy Core</strong></summary>
+Heavy core duplication recipe.<br>
+<img src="images/Heavy%20Core/heavy_core.png" alt="Heavy Core">
 </details>
 <details>
-<summary>Horse Armor & Saddle</summary>
-Horse armor & saddle recipes, including modifying the leather horse armor recipe to match the other horse armor recipes.
-
-![saddle.png](images/Horse%20Armor%20%26%20Saddle/saddle.png)
-![leather_horse_armor.png](images/Horse%20Armor%20%26%20Saddle/leather_horse_armor.png)
-![golden_horse_armor.png](images/Horse%20Armor%20%26%20Saddle/golden_horse_armor.png)
-![iron_horse_armor.png](images/Horse%20Armor%20%26%20Saddle/iron_horse_armor.png)
-![diamond_horse_armor.png](images/Horse%20Armor%20%26%20Saddle/diamond_horse_armor.png)
+<summary><strong>Horse Armor & Saddle</strong></summary>
+Horse armor & saddle recipes, including modifying the leather horse armor recipe to match the other horse armor recipes.<br>
+<img src="images/Horse%20Armor%20%26%20Saddle/saddle.png" alt="Saddle"><img src="images/Horse%20Armor%20%26%20Saddle/leather_horse_armor.png" alt="Leather Horse Armor"><img src="images/Horse%20Armor%20%26%20Saddle/golden_horse_armor.png" alt="Golden Horse Armor"><img src="images/Horse%20Armor%20%26%20Saddle/iron_horse_armor.png" alt="Iron Horse Armor"><img src="images/Horse%20Armor%20%26%20Saddle/diamond_horse_armor.png" alt="Diamond Horse Armor">
 </details>
 <details>
-<summary>Lead</summary>
-Backported lead recipe.
-
-![lead.png](images/Lead/lead.png)
+<summary><strong>Lead</strong></summary>
+Backported lead recipe.<br>
+<img src="images/Lead/lead.png" alt="Lead">
 </details>
 <details>
-<summary>Lodestone</summary>
-Backported lodestone recipe and if Advanced Netherite is loaded its lodestone recipes are removed.
-
-![lodestone.png](images/Lodestone/lodestone.png)
+<summary><strong>Lodestone</strong></summary>
+Backported lodestone recipe and if Advanced Netherite is loaded its lodestone recipes are removed.<br>
+<img src="images/Lodestone/lodestone.png" alt="Lodestone">
 </details>
 <details>
-<summary>Netherite Ingot</summary>
-Netherite ingot recipe.
-
-![netherite.png](images/Netherite%20Ingot/netherite.png)
+<summary><strong>Netherite Ingot</strong></summary>
+Netherite ingot recipe.<br>
+<img src="images/Netherite%20Ingot/netherite.png" alt="Netherite Ingot">
 </details>
 <details>
-<summary>Smithing</summary>
-Smithing recipes for Metal Bundles, diamond bundle to netherite bundle, and Spiky Spikes, diamond spike to netherite spike.
-
-![netherite_bundle.png](images/Smithing/netherite_bundle.png)
-![netherite_spike.png](images/Smithing/netherite_spike.png)
+<summary><strong>Smithing</strong></summary>
+Smithing recipes for Metal Bundles, diamond bundle to netherite bundle, and Spiky Spikes, diamond spike to netherite spike.<br>
+<img src="images/Smithing/netherite_bundle.png" alt="Netherite Bundle"><img src="images/Smithing/netherite_spike.png" alt="Netherite Spike">
 </details>
 <details>
-<summary>Tuff & Netherrack</summary>
-Tuff & netherrack recipes.
-
-![tuff.png](images/Tuff%20%26%20Netherrack/tuff.png)
-![netherrack.png](images/Tuff%20%26%20Netherrack/netherrack.png)
+<summary><strong>Tuff & Netherrack</strong></summary>
+Tuff & netherrack recipes.<br>
+<img src="images/Tuff%20%26%20Netherrack/tuff.png" alt="Tuff"><img src="images/Tuff%20%26%20Netherrack/netherrack.png" alt="Netherrack">
 </details>
 <details>
-<summary>Totem of Undying</summary>
-Totem of Undying recipe.
-
-![totem_of_undying.png](images/Totem%20of%20Undying/totem_of_undying.png)
+<summary><strong>Totem of Undying</strong></summary>
+Totem of Undying recipe.<br>
+<img src="images/Totem%20of%20Undying/totem_of_undying.png" alt="Totem Of Undying">
 </details>
-
-Modrinth: https://modrinth.com/mod/gk1h-recipes <br>
-CurseForge: https://curseforge.com/minecraft/mc-mods/gk1h-recipes <br>
-Discord: https://discord.gg/AwJvGzH
+<a style="color:#1bd96a;" href="https://modrinth.com/mod/gk1h-recipes">Modrinth</a><br>
+<a style="color:#f16436;" href="https://curseforge.com/minecraft/mc-mods/gk1h-recipes">CurseForge</a><br>
+<a style="color:#5865f2;" href="https://discord.gg/AwJvGzH">Discord</a>
