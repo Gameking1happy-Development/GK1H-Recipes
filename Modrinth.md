@@ -55,4 +55,4 @@ Tuff & netherrack recipes.<br>
 Totem of Undying recipe.<br>
 <img src="https://raw.githubusercontent.com/Gameking1happy-Development/GK1H-Recipes/refs/heads/1.21.1/images/Totem%20of%20Undying/totem_of_undying.png" alt="Totem Of Undying">
 </details>
-<a style="color:#f16436;" href="https://curseforge.com/minecraft/mc-mods/gk1h-recipes">CurseForge</a>
+<a href="https://curseforge.com/minecraft/mc-mods/gk1h-recipes"><font color="#f16436">CurseForge</font></a>
