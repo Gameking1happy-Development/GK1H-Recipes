@@ -14,11 +14,11 @@ dependencies {
     modImplementation("me.fzzyhmstrs:fzzy_config:${fzzy_config_version}")
     modApi("io.github.gameking1happy.gk1hcore:gk1hcore-fabric-1.21.1:${gk1hcore_version}")
     modImplementation("com.terraformersmc:modmenu:${project.modmenu_version}")
-    modImplementation("maven.modrinth:6pY6oEMg:v${metalbundles_version}-1.21.1-Fabric")
+    modImplementation("maven.modrinth:metal-bundles:v${metalbundles_version}-1.21.1-Fabric")
     modImplementation("fuzs.puzzleslib:puzzleslib-fabric:${puzzleslib_version}")
     modImplementation("fuzs.iteminteractions:iteminteractions-fabric:${iteminteractions_version}")
-    modImplementation("maven.modrinth:CFX9ftUJ:fabric-${advancednetherite_version}-mc1.21.1")
-    modImplementation("maven.modrinth:DUaLBLVL:v${spikyspikes_version}-1.21.1-Fabric")
+    modImplementation("maven.modrinth:advanced-netherite:fabric-${advancednetherite_version}-mc1.21.1")
+    modImplementation("maven.modrinth:spiky-spikes:v${spikyspikes_version}-1.21.1-Fabric")
 }
 repositories {
     maven {

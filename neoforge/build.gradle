@@ -14,12 +14,12 @@ repositories {
 dependencies {
     api("io.github.gameking1happy.gk1hcore:gk1hcore-neoforge-1.21.1:${gk1hcore_version}")
     accessTransformers("io.github.gameking1happy.gk1hcore:gk1hcore-neoforge-1.21.1:${gk1hcore_version}")
-    implementation("maven.modrinth:6pY6oEMg:v${metalbundles_version}-1.21.1-NeoForge")
+    implementation("maven.modrinth:metal-bundles:v${metalbundles_version}-1.21.1-NeoForge")
     implementation("fuzs.puzzleslib:puzzleslib-neoforge:${puzzleslib_version}")
     implementation("fuzs.iteminteractions:iteminteractions-neoforge:${iteminteractions_version}")
     implementation("me.fzzyhmstrs:fzzy_config:${fzzy_config_version}+neoforge")
-    implementation("maven.modrinth:CFX9ftUJ:neoforge-${advancednetherite_version}-mc1.21.1")
-    implementation("maven.modrinth:DUaLBLVL:v${spikyspikes_version}-1.21.1-NeoForge")
+    implementation("maven.modrinth:advanced-netherite:neoforge-${advancednetherite_version}-mc1.21.1")
+    implementation("maven.modrinth:spiky-spikes:v${spikyspikes_version}-1.21.1-NeoForge")
 }
 neoForge {
     version = neoforge_version
@@ -38,17 +38,19 @@ neoForge {
             ideName = "NeoForge ${it.name.capitalize()} (${project.path})" // Unify the run config names with fabric
         }
         client {
+            gameDirectory = project.file('runs/client')
             client()
         }
         data {
             data()
-
+            gameDirectory = project.file('runs/data')
             // DataGen can be run by - "./gradlew :neoforge:runData" in Terminal.
             // Specify the modid for data generation, where to output the resulting resource, and where to look for existing resources.
             programArguments.addAll '--mod', project.mod_id, '--all', '--output', rootProject.project('common').file('src/generated/resources/').getAbsolutePath(), '--existing', file('src/main/resources/').getAbsolutePath()
 
         }
         server {
+            gameDirectory = project.file('runs/server')
             server()
         }
     }

@@ -19,9 +19,6 @@ subprojects {
             name = "GK1H Mod Resources"
             url = "https://raw.githubusercontent.com/Gameking1happy-Development/Mod-Resources/main/maven/"
         }
-    }
-    repositories {
-        // Other repositories can go above or below Modrinth's. We don't need priority :)
         exclusiveContent {
             forRepository {
                 maven {
