@@ -41,7 +41,7 @@ side = "BOTH"
 [dependencies.${ mod_id }.mc-publish]
 ignore = false
 modrinth = "vjOWyxXu"
-curseforge = "1384685"
+curseforge = 1384685
 [[dependencies.${ mod_id }]]
 modId = "fzzy_config"
 type = "required"
@@ -51,7 +51,7 @@ side = "BOTH"
 [dependencies.${ mod_id }.mc-publish]
 ignore = false
 modrinth = "hYykXjDp"
-curseforge = "1005914"
+curseforge = 1005914
 [[dependencies.${ mod_id }]]
 modId = "metalbundles"
 type = "optional"
@@ -61,7 +61,7 @@ side = "BOTH"
 [dependencies.${ mod_id }.mc-publish]
 ignore = false
 modrinth = "6pY6oEMg"
-curseforge = "891325"
+curseforge = 891325
 [[dependencies.${ mod_id }]]
 modId = "advancednetherite"
 type = "optional"
@@ -71,7 +71,7 @@ side = "BOTH"
 [dependencies.${ mod_id }.mc-publish]
 ignore = false
 modrinth = "CFX9ftUJ"
-curseforge = "495336"
+curseforge = 495336
 [[dependencies.${ mod_id }]]
 modId = "spikyspikes"
 type = "optional"
@@ -81,7 +81,10 @@ side = "BOTH"
 [dependencies.${ mod_id }.mc-publish]
 ignore = false
 modrinth = "DUaLBLVL"
-curseforge = "666944"
+curseforge = 666944
+[mc-publish]
+modrinth = "psRI0DzZ"
+curseforge = 1384710
 # Features are specific properties of the game environment, that you may want to declare you require. This example declares
 # that your mod requires GL version 3.2 or higher. Other features will be added. They are side aware so declaring this won't
 # stop your mod loading on the server for example.
