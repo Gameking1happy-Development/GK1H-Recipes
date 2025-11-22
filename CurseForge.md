@@ -1,4 +1,4 @@
-Recipe mod for 1.21.1 made by GK1H.
+Recipe mod made by GK1H.
 <h1>Features</h1>
 <h2>Bundle</h2>
 <div class="spoiler">Bundle recipe, if Metal Bundles is loaded instead disables bundle recipe and replaces the leather bundle recipe from Metal Bundles.<br>
