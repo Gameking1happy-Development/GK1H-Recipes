@@ -4,10 +4,11 @@
     "1.0.0": "Developmental version.",
     "21.1.1.0": "Changed versioning to [Minecraft Minor].[Minecraft Patch].[Major].[Minor].",
     "21.1.1.1": "Added documentation and cleaned up code.",
-    "21.1.1.1-hotfix": "Forgot to add NeoForge dependencies to CurseForge via mc-publish. Also releasing since have put datagen classes into packages based on group and images into directories based on group, otherwise would not have released this hotfix."
+    "21.1.1.1-hotfix": "Forgot to add NeoForge dependencies to CurseForge via mc-publish. Also releasing since have put datagen classes into packages based on group and images into directories based on group, otherwise would not have released this hotfix.",
+    "21.1.2.0": "Mostly non-content changes."
   },
   "promos": {
-    "1.21.1-latest": "21.1.1.1-hotfix",
-    "1.21.1-recommended": "21.1.1.1-hotfix"
+    "1.21.1-latest": "21.1.2.0",
+    "1.21.1-recommended": "21.1.2.0"
   }
 }

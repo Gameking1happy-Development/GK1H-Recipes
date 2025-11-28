@@ -4,7 +4,7 @@ import io.github.gameking1happy.gk1hcore.packs.AddPacks;
 import org.jetbrains.annotations.NotNull;
 
 import static io.github.gameking1happy.gk1hcore.packs.AddPackPreset.addCDP;
-import static io.github.gameking1happy.gk1hcore.platform.Services.PLATFORM;
+import static io.github.gameking1happy.gk1hcore.compat.CompatFlags.*;
 import static io.github.gameking1happy.gk1hrecipes.Main.*;
 
 /**
@@ -17,10 +17,10 @@ public class Packs implements AddPacks {
      */
     public void addPacks(@NotNull Object modContainerOrEvent) {
         if (Bundle) {
-            if (!PLATFORM.isModLoaded("metalbundles")) {
+            if (!MetBun) {
                 addCDP(modContainerOrEvent, getModID(), "bundle");
             }
-            if (PLATFORM.isModLoaded("metalbundles")) {
+            if (MetBun) {
                 addCDP(modContainerOrEvent, getModID(), "bundlembcompat");
             }
         }
@@ -41,7 +41,7 @@ public class Packs implements AddPacks {
         }
         if (Lodestone) {
             addCDP(modContainerOrEvent, getModID(), "lodestone");
-            if (PLATFORM.isModLoaded("advancednetherite")) {
+            if (AdvNet) {
                 addCDP(modContainerOrEvent, getModID(), "lodestoneancompat");
             }
         }
@@ -49,10 +49,10 @@ public class Packs implements AddPacks {
             addCDP(modContainerOrEvent, getModID(), "netherite");
         }
         if (Smithing) {
-            if (PLATFORM.isModLoaded("metalbundles")) {
+            if (MetBun) {
                 addCDP(modContainerOrEvent, getModID(), "smithingmbcompat");
             }
-            if (PLATFORM.isModLoaded("spikyspikes")) {
+            if (SpiSpi) {
                 addCDP(modContainerOrEvent, getModID(), "smithingsscompat");
             }
         }

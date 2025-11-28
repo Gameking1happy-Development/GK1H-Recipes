@@ -11,7 +11,7 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.concurrent.CompletableFuture;
 
-import static io.github.gameking1happy.gk1hcore.Main.fNAP;
+import static io.github.gameking1happy.gk1hcore.data.CoreData.*;
 import static io.github.gameking1happy.gk1hrecipes.Main.MOD_ID;
 
 /**
@@ -39,6 +39,6 @@ public class NetheriteRecipeProvider extends RecipeProvider {
                 .group("netherite_ingot")
                 .unlockedBy("has_gold_ingot", has(Items.GOLD_INGOT))
                 .unlockedBy("has_nether_star", has(Items.NETHER_STAR))
-                .save(output, fNAP(MOD_ID, "netherite"));
+                .save(output, fNaP(MOD_ID, "netherite"));
     }
 }

@@ -40,8 +40,8 @@ ordering = "NONE"
 side = "BOTH"
 [dependencies.${ mod_id }.mc-publish]
 ignore = false
-modrinth = "vjOWyxXu"
-curseforge = 1384685
+modrinth = "gk1h-core"
+curseforge = "1384685"
 [[dependencies.${ mod_id }]]
 modId = "fzzy_config"
 type = "required"
@@ -50,8 +50,8 @@ ordering = "NONE"
 side = "BOTH"
 [dependencies.${ mod_id }.mc-publish]
 ignore = false
-modrinth = "hYykXjDp"
-curseforge = 1005914
+modrinth = "fzzy-config"
+curseforge = "1005914"
 [[dependencies.${ mod_id }]]
 modId = "metalbundles"
 type = "optional"
@@ -60,8 +60,8 @@ ordering = "AFTER"
 side = "BOTH"
 [dependencies.${ mod_id }.mc-publish]
 ignore = false
-modrinth = "6pY6oEMg"
-curseforge = 891325
+modrinth = "metal-bundles"
+curseforge = "891325"
 [[dependencies.${ mod_id }]]
 modId = "advancednetherite"
 type = "optional"
@@ -70,8 +70,8 @@ ordering = "AFTER"
 side = "BOTH"
 [dependencies.${ mod_id }.mc-publish]
 ignore = false
-modrinth = "CFX9ftUJ"
-curseforge = 495336
+modrinth = "advanced-netherite"
+curseforge = "495336"
 [[dependencies.${ mod_id }]]
 modId = "spikyspikes"
 type = "optional"
@@ -80,11 +80,11 @@ ordering = "AFTER"
 side = "BOTH"
 [dependencies.${ mod_id }.mc-publish]
 ignore = false
-modrinth = "DUaLBLVL"
-curseforge = 666944
+modrinth = "spiky-spikes"
+curseforge = "666944"
 [mc-publish]
-modrinth = "psRI0DzZ"
-curseforge = 1384710
+modrinth = "gk1h-recipes"
+curseforge = "1384710"
 # Features are specific properties of the game environment, that you may want to declare you require. This example declares
 # that your mod requires GL version 3.2 or higher. Other features will be added. They are side aware so declaring this won't
 # stop your mod loading on the server for example.

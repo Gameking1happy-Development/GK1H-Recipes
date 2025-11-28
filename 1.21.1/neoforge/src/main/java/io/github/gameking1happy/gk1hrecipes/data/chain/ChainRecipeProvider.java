@@ -11,7 +11,7 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.concurrent.CompletableFuture;
 
-import static io.github.gameking1happy.gk1hcore.Main.fNAP;
+import static io.github.gameking1happy.gk1hcore.data.CoreData.*;
 import static io.github.gameking1happy.gk1hrecipes.Main.MOD_ID;
 
 /**
@@ -47,26 +47,26 @@ public class ChainRecipeProvider extends RecipeProvider {
                 .pattern("X X")
                 .define('X', Items.CHAIN)
                 .unlockedBy("has_chain", has(Items.CHAIN))
-                .save(output, fNAP(MOD_ID, "chainmail_helmet"));
+                .save(output, fNaP(MOD_ID, "chainmail_helmet"));
         ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, Items.CHAINMAIL_CHESTPLATE)
                 .pattern("X X")
                 .pattern("XXX")
                 .pattern("XXX")
                 .define('X', Items.CHAIN)
                 .unlockedBy("has_chain", has(Items.CHAIN))
-                .save(output, fNAP(MOD_ID, "chainmail_chestplate"));
+                .save(output, fNaP(MOD_ID, "chainmail_chestplate"));
         ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, Items.CHAINMAIL_LEGGINGS)
                 .pattern("XXX")
                 .pattern("X X")
                 .pattern("X X")
                 .define('X', Items.CHAIN)
                 .unlockedBy("has_chain", has(Items.CHAIN))
-                .save(output, fNAP(MOD_ID, "chainmail_leggings"));
+                .save(output, fNaP(MOD_ID, "chainmail_leggings"));
         ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, Items.CHAINMAIL_BOOTS)
                 .pattern("X X")
                 .pattern("X X")
                 .define('X', Items.CHAIN)
                 .unlockedBy("has_chain", has(Items.CHAIN))
-                .save(output, fNAP(MOD_ID, "chainmail_boots"));
+                .save(output, fNaP(MOD_ID, "chainmail_boots"));
     }
 }

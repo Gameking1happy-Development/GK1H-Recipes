@@ -5,7 +5,7 @@ import me.fzzyhmstrs.fzzy_config.annotations.RequiresAction;
 import me.fzzyhmstrs.fzzy_config.config.Config;
 import me.fzzyhmstrs.fzzy_config.validation.misc.ValidatedBoolean;
 
-import static io.github.gameking1happy.gk1hcore.Main.fNAP;
+import static io.github.gameking1happy.gk1hcore.data.CoreData.*;
 import static io.github.gameking1happy.gk1hrecipes.Main.MOD_ID;
 import static me.fzzyhmstrs.fzzy_config.annotations.Action.RESTART;
 
@@ -75,6 +75,6 @@ public class ServerConfig extends Config {
      * The constructor method.
      */
     public ServerConfig() {
-        super(fNAP(MOD_ID, "server_config"));
+        super(fNaP(MOD_ID, "server_config"));
     }
 }

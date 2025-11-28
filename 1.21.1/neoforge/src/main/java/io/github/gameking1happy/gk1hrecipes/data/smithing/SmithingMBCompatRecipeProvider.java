@@ -13,7 +13,7 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.concurrent.CompletableFuture;
 
-import static io.github.gameking1happy.gk1hcore.Main.fNAP;
+import static io.github.gameking1happy.gk1hcore.data.CoreData.*;
 
 /**
  * Smithing Metal Bundle Compat datagen.
@@ -38,6 +38,6 @@ public class SmithingMBCompatRecipeProvider extends RecipeProvider {
                 .unlocks("has_diamond_bundle", has(ModRegistry.DIAMOND_BUNDLE_ITEM.value()))
                 .unlocks("has_netherite_ingot", has(Items.NETHERITE_INGOT))
                 .unlocks("has_netherite_upgrade_smithing_template", has(Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE))
-                .save(output, fNAP("metalbundles", "netherite_bundle"));
+                .save(output, fNaP("metalbundles", "netherite_bundle"));
     }
 }

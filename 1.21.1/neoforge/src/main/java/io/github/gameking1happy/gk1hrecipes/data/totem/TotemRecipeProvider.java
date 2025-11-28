@@ -11,7 +11,7 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.concurrent.CompletableFuture;
 
-import static io.github.gameking1happy.gk1hcore.Main.fNAP;
+import static io.github.gameking1happy.gk1hcore.data.CoreData.*;
 import static io.github.gameking1happy.gk1hrecipes.Main.MOD_ID;
 
 /**
@@ -43,6 +43,6 @@ public class TotemRecipeProvider extends RecipeProvider {
                 .unlockedBy("has_gold_block", has(Items.GOLD_BLOCK))
                 .unlockedBy("has_emerald", has(Items.EMERALD))
                 .unlockedBy("has_nether_star", has(Items.NETHER_STAR))
-                .save(output, fNAP(MOD_ID, "totem_of_undying"));
+                .save(output, fNaP(MOD_ID, "totem_of_undying"));
     }
 }

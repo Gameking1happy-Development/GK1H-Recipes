@@ -13,7 +13,7 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.concurrent.CompletableFuture;
 
-import static io.github.gameking1happy.gk1hcore.Main.fNAP;
+import static io.github.gameking1happy.gk1hcore.data.CoreData.*;
 
 /**
  * Smithing Spiky Spikes Compat datagen.
@@ -38,6 +38,6 @@ public class SmithingSSCompatRecipeProvider extends RecipeProvider {
                 .unlocks("has_diamond_spike", has(ModRegistry.DIAMOND_SPIKE_ITEM.value()))
                 .unlocks("has_netherite_ingot", has(Items.NETHERITE_INGOT))
                 .unlocks("has_netherite_upgrade_smithing_template", has(Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE))
-                .save(output, fNAP("spikyspikes", "netherite_spike"));
+                .save(output, fNaP("spikyspikes", "netherite_spike"));
     }
 }

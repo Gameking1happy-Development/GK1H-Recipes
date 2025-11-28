@@ -12,7 +12,7 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.concurrent.CompletableFuture;
 
-import static io.github.gameking1happy.gk1hcore.Main.fNAP;
+import static io.github.gameking1happy.gk1hcore.data.CoreData.*;
 
 /**
  * Bundle Metal Bundles Compat datagen.
@@ -40,6 +40,6 @@ public class BundleMBCompatRecipeProvider extends RecipeProvider {
                 .define('L', Items.LEATHER)
                 .unlockedBy("has_string", has(Items.STRING))
                 .unlockedBy("has_leather", has(Items.LEATHER))
-                .save(output, fNAP("metalbundles", "leather_bundle"));
+                .save(output, fNaP("metalbundles", "leather_bundle"));
     }
 }

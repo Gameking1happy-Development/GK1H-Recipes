@@ -9,7 +9,7 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.concurrent.CompletableFuture;
 
-import static io.github.gameking1happy.gk1hcore.Main.fNAP;
+import static io.github.gameking1happy.gk1hcore.data.CoreData.*;
 import static io.github.gameking1happy.gk1hrecipes.Main.MOD_ID;
 
 /**
@@ -38,9 +38,9 @@ public class StoneTypeRecipeProvider extends RecipeProvider {
                 .unlockedBy("has_stone", has(Items.STONE))
                 .unlockedBy("has_cobblestone", has(Items.COBBLESTONE))
                 .unlockedBy("has_quartz", has(Items.QUARTZ))
-                .save(output, fNAP(MOD_ID, "tuff"));
+                .save(output, fNaP(MOD_ID, "tuff"));
         SimpleCookingRecipeBuilder.smelting(Ingredient.of(Items.BLACKSTONE), RecipeCategory.BUILDING_BLOCKS, Items.NETHERRACK, 0.1F, 200)
                 .unlockedBy("has_blackstone", has(Items.BLACKSTONE))
-                .save(output, fNAP(MOD_ID, "netherrack"));
+                .save(output, fNaP(MOD_ID, "netherrack"));
     }
 }

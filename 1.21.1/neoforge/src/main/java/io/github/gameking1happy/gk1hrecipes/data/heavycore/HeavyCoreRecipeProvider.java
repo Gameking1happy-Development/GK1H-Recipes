@@ -11,7 +11,7 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.concurrent.CompletableFuture;
 
-import static io.github.gameking1happy.gk1hcore.Main.fNAP;
+import static io.github.gameking1happy.gk1hcore.data.CoreData.*;
 import static io.github.gameking1happy.gk1hrecipes.Main.MOD_ID;
 
 /**
@@ -43,6 +43,6 @@ public class HeavyCoreRecipeProvider extends RecipeProvider {
                 .unlockedBy("has_heavy_core", has(Items.HEAVY_CORE))
                 .unlockedBy("has_ominous_trial_key", has(Items.OMINOUS_TRIAL_KEY))
                 .unlockedBy("has_trial_key", has(Items.TRIAL_KEY))
-                .save(output, fNAP(MOD_ID, "heavy_core"));
+                .save(output, fNaP(MOD_ID, "heavy_core"));
     }
 }

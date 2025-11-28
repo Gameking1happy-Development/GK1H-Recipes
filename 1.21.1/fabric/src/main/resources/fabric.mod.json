@@ -54,17 +54,17 @@
       "update_checker": true
     },
     "mc-publish": {
-      "modrinth": "psRI0DzZ",
-      "curseforge": 1384710,
+      "modrinth": "gk1h-recipes",
+      "curseforge": "1384710",
       "dependencies": [
         "fabricloader@>=${fabric_loader_version}#(ignore)",
         "minecraft@${minecraft_version}#(ignore)",
         "java@>=${java_version}#(ignore)",
-        "fzzy_config@>=${fzzy_config_version}(required){modrinth:hYykXjDp}{curseforge:1005914}",
-        "gk1hcore@>=${gk1hcore_version}(required){modrinth:vjOWyxXu}{curseforge:1384685}",
-        "metalbundles@>=${metalbundles_version}(optional){modrinth:6pY6oEMg}{curseforge:891325}",
-        "advancednetherite@>=${advancednetherite_version}(optional){modrinth:CFX9ftUJ}{curseforge:547881}",
-        "spikyspikes@>=${spikyspikes_version}(optional){modrinth:DUaLBLVL}{curseforge:666944}"
+        "fzzy_config@>=${fzzy_config_version}(required){modrinth:fzzy-config}{curseforge:1005914}",
+        "gk1hcore@>=${gk1hcore_version}(required){modrinth:gk1h-core}{curseforge:1384685}",
+        "metalbundles@>=${metalbundles_version}(optional){modrinth:metal-bundles}{curseforge:891325}",
+        "advancednetherite@>=${advancednetherite_version}(optional){modrinth:advanced-netherite}{curseforge:547881}",
+        "spikyspikes@>=${spikyspikes_version}(optional){modrinth:spiky-spikes}{curseforge:666944}"
       ]
     }
   }
